@@ -36,7 +36,7 @@ namespace GYM_Matrix
 
             var response = client.Execute(request);
 
-            MessageBox.Show(response.ErrorMessage);
+            MessageBox.Show(response.StatusCode.ToString());
            
 
 
