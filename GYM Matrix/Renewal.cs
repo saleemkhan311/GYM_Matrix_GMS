@@ -35,7 +35,7 @@ namespace GYM_Matrix
 
                 cmd = con.CreateCommand();
 
-                cmd.CommandText = "SELECT * FROM addmembers";
+                cmd.CommandText = "SELECT * FROM `addmembers` ORDER BY Member_Name ASC;";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable Records = new DataTable();
@@ -255,6 +255,68 @@ namespace GYM_Matrix
                 MessageBox.Show("Null Image Directory or " + ex.Message);
             }
 
+        }
+
+        private void SearchButton(object sender, EventArgs e)
+        {
+            if (SearchTextBox.Text.Trim() != string.Empty)
+            {
+                try
+                {
+                    MySqlConnection con = new MySqlConnection(AppSettings.ConString());
+                    con.Open();
+
+                    MySqlCommand cmd;
+                    cmd = con.CreateCommand();
+
+                    if (NameRadio.Checked)
+                    {
+                        cmd.CommandText = "SELECT * FROM addmembers WHERE Member_Name LIKE" + "'" + SearchTextBox.Text + "%'";
+                        cmd.Parameters.AddWithValue("@Member_Name", SearchTextBox.Text);
+
+                    }
+                    else if (IDRadio.Checked)
+                    {
+                        cmd.CommandText = "SELECT * FROM addmembers WHERE ID=@ID";
+                        cmd.Parameters.AddWithValue("@ID", SearchTextBox.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please Select 'Search by Name' Or 'Search by ID' Option ");
+                    }
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    DataTable records = new DataTable();
+                    records.Load(reader);
+
+
+                    if (records.Rows.Count >= 1)
+                    {
+                        RenewalTabel.DataSource = records;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Records Found");
+                        LoadData();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else { MessageBox.Show("Enter Something to Search"); }
+        }
+
+        private void Renewal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResetTableButton(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

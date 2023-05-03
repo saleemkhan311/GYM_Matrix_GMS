@@ -68,13 +68,12 @@ namespace GYM_Matrix
                     cmd.Parameters.AddWithValue("@Renewal_Date", RenewalDate.Value);
                     cmd.Parameters.AddWithValue("@Addmission_Date", AddmissionDate.Value);
                     cmd.Parameters.AddWithValue("@receivedby", LoginPage.username);
-                    MessageBox.Show(ProfilePage.img_Dir);
                     cmd.Parameters.AddWithValue("@Image_Dir", ProfilePage.img_Dir);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data Inserted Succesfully");
                 }catch(Exception ex)
                 {
-                    MessageBox.Show("Please Run Xampp Services or "+ex.Message+fileName);
+                    MessageBox.Show("Please Run Xampp Services or "+ex.Message);
                 }
 
             }else

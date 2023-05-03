@@ -79,6 +79,12 @@ namespace GYM_Matrix
             this.label21 = new System.Windows.Forms.Label();
             this.MinimizeApp = new System.Windows.Forms.PictureBox();
             this.CloseApp = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SearchTextBox = new System.Windows.Forms.TextBox();
+            this.IDRadio = new System.Windows.Forms.RadioButton();
+            this.NameRadio = new System.Windows.Forms.RadioButton();
+            this.ResetButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProfileBox)).BeginInit();
             this.CardPanelClose.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RefershButton)).BeginInit();
@@ -87,6 +93,9 @@ namespace GYM_Matrix
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResetButton)).BeginInit();
             this.SuspendLayout();
             // 
             // ProfileBox
@@ -155,17 +164,17 @@ namespace GYM_Matrix
             // 
             // MembershipBox
             // 
-            this.MembershipBox.Location = new System.Drawing.Point(549, 138);
-            this.MembershipBox.Multiline = true;
+            this.MembershipBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MembershipBox.Location = new System.Drawing.Point(553, 175);
             this.MembershipBox.Name = "MembershipBox";
-            this.MembershipBox.Size = new System.Drawing.Size(110, 34);
+            this.MembershipBox.Size = new System.Drawing.Size(110, 25);
             this.MembershipBox.TabIndex = 42;
             // 
             // MembershipRenewalTextBox
             // 
             this.MembershipRenewalTextBox.AutoSize = true;
             this.MembershipRenewalTextBox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MembershipRenewalTextBox.Location = new System.Drawing.Point(540, 110);
+            this.MembershipRenewalTextBox.Location = new System.Drawing.Point(544, 147);
             this.MembershipRenewalTextBox.Name = "MembershipRenewalTextBox";
             this.MembershipRenewalTextBox.Size = new System.Drawing.Size(139, 24);
             this.MembershipRenewalTextBox.TabIndex = 41;
@@ -185,7 +194,7 @@ namespace GYM_Matrix
             // 
             this.GenderRenewalBox.AutoSize = true;
             this.GenderRenewalBox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GenderRenewalBox.Location = new System.Drawing.Point(557, 28);
+            this.GenderRenewalBox.Location = new System.Drawing.Point(561, 81);
             this.GenderRenewalBox.Name = "GenderRenewalBox";
             this.GenderRenewalBox.Size = new System.Drawing.Size(67, 24);
             this.GenderRenewalBox.TabIndex = 36;
@@ -194,29 +203,29 @@ namespace GYM_Matrix
             // GenderBox
             // 
             this.GenderBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GenderBox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GenderBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GenderBox.FormattingEnabled = true;
             this.GenderBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderBox.Location = new System.Drawing.Point(550, 56);
+            this.GenderBox.Location = new System.Drawing.Point(554, 109);
             this.GenderBox.Name = "GenderBox";
-            this.GenderBox.Size = new System.Drawing.Size(108, 32);
+            this.GenderBox.Size = new System.Drawing.Size(108, 25);
             this.GenderBox.TabIndex = 2;
             // 
             // DuesBox
             // 
-            this.DuesBox.Location = new System.Drawing.Point(552, 228);
-            this.DuesBox.Multiline = true;
+            this.DuesBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DuesBox.Location = new System.Drawing.Point(552, 240);
             this.DuesBox.Name = "DuesBox";
-            this.DuesBox.Size = new System.Drawing.Size(110, 34);
+            this.DuesBox.Size = new System.Drawing.Size(110, 25);
             this.DuesBox.TabIndex = 34;
             // 
             // DuesRbox
             // 
             this.DuesRbox.AutoSize = true;
             this.DuesRbox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DuesRbox.Location = new System.Drawing.Point(573, 201);
+            this.DuesRbox.Location = new System.Drawing.Point(573, 213);
             this.DuesRbox.Name = "DuesRbox";
             this.DuesRbox.Size = new System.Drawing.Size(53, 24);
             this.DuesRbox.TabIndex = 33;
@@ -224,17 +233,17 @@ namespace GYM_Matrix
             // 
             // FeeBox
             // 
-            this.FeeBox.Location = new System.Drawing.Point(382, 228);
-            this.FeeBox.Multiline = true;
+            this.FeeBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FeeBox.Location = new System.Drawing.Point(382, 240);
             this.FeeBox.Name = "FeeBox";
-            this.FeeBox.Size = new System.Drawing.Size(110, 34);
+            this.FeeBox.Size = new System.Drawing.Size(110, 25);
             this.FeeBox.TabIndex = 32;
             // 
             // FeeRBox
             // 
             this.FeeRBox.AutoSize = true;
             this.FeeRBox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FeeRBox.Location = new System.Drawing.Point(395, 201);
+            this.FeeRBox.Location = new System.Drawing.Point(395, 213);
             this.FeeRBox.Name = "FeeRBox";
             this.FeeRBox.Size = new System.Drawing.Size(72, 24);
             this.FeeRBox.TabIndex = 31;
@@ -242,17 +251,17 @@ namespace GYM_Matrix
             // 
             // AgeBox
             // 
-            this.AgeBox.Location = new System.Drawing.Point(206, 228);
-            this.AgeBox.Multiline = true;
+            this.AgeBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AgeBox.Location = new System.Drawing.Point(206, 240);
             this.AgeBox.Name = "AgeBox";
-            this.AgeBox.Size = new System.Drawing.Size(110, 34);
+            this.AgeBox.Size = new System.Drawing.Size(110, 25);
             this.AgeBox.TabIndex = 30;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(214, 201);
+            this.label5.Location = new System.Drawing.Point(214, 213);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 24);
             this.label5.TabIndex = 29;
@@ -260,10 +269,10 @@ namespace GYM_Matrix
             // 
             // WeightBox
             // 
-            this.WeightBox.Location = new System.Drawing.Point(381, 138);
-            this.WeightBox.Multiline = true;
+            this.WeightBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WeightBox.Location = new System.Drawing.Point(385, 175);
             this.WeightBox.Name = "WeightBox";
-            this.WeightBox.Size = new System.Drawing.Size(110, 34);
+            this.WeightBox.Size = new System.Drawing.Size(110, 25);
             this.WeightBox.TabIndex = 28;
             // 
             // UserLabel
@@ -271,7 +280,7 @@ namespace GYM_Matrix
             this.UserLabel.AutoSize = true;
             this.UserLabel.BackColor = System.Drawing.Color.Transparent;
             this.UserLabel.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserLabel.Location = new System.Drawing.Point(433, 16);
+            this.UserLabel.Location = new System.Drawing.Point(475, 9);
             this.UserLabel.Name = "UserLabel";
             this.UserLabel.Size = new System.Drawing.Size(62, 28);
             this.UserLabel.TabIndex = 25;
@@ -282,7 +291,7 @@ namespace GYM_Matrix
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Berlin Bold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(412, 16);
+            this.label14.Location = new System.Drawing.Point(412, 11);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(15, 27);
             this.label14.TabIndex = 24;
@@ -292,7 +301,7 @@ namespace GYM_Matrix
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(266, 16);
+            this.label13.Location = new System.Drawing.Point(255, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(136, 28);
             this.label13.TabIndex = 23;
@@ -302,7 +311,7 @@ namespace GYM_Matrix
             // 
             this.PhoneRenewalTextBox.AutoSize = true;
             this.PhoneRenewalTextBox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PhoneRenewalTextBox.Location = new System.Drawing.Point(213, 111);
+            this.PhoneRenewalTextBox.Location = new System.Drawing.Point(217, 148);
             this.PhoneRenewalTextBox.Name = "PhoneRenewalTextBox";
             this.PhoneRenewalTextBox.Size = new System.Drawing.Size(80, 24);
             this.PhoneRenewalTextBox.TabIndex = 25;
@@ -311,6 +320,7 @@ namespace GYM_Matrix
             // CardPanelClose
             // 
             this.CardPanelClose.BackColor = System.Drawing.Color.White;
+            this.CardPanelClose.Controls.Add(this.groupBox1);
             this.CardPanelClose.Controls.Add(this.label10);
             this.CardPanelClose.Controls.Add(this.label11);
             this.CardPanelClose.Controls.Add(this.RefershButton);
@@ -398,18 +408,18 @@ namespace GYM_Matrix
             // 
             // IDBox
             // 
+            this.IDBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IDBox.Location = new System.Drawing.Point(39, 359);
-            this.IDBox.Multiline = true;
             this.IDBox.Name = "IDBox";
-            this.IDBox.Size = new System.Drawing.Size(110, 34);
+            this.IDBox.Size = new System.Drawing.Size(110, 25);
             this.IDBox.TabIndex = 54;
             // 
             // NameBox
             // 
-            this.NameBox.Location = new System.Drawing.Point(202, 67);
-            this.NameBox.Multiline = true;
+            this.NameBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameBox.Location = new System.Drawing.Point(206, 120);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(110, 34);
+            this.NameBox.Size = new System.Drawing.Size(110, 25);
             this.NameBox.TabIndex = 54;
             // 
             // label24
@@ -440,7 +450,7 @@ namespace GYM_Matrix
             // 
             this.WeightRenewalBox.AutoSize = true;
             this.WeightRenewalBox.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WeightRenewalBox.Location = new System.Drawing.Point(391, 111);
+            this.WeightRenewalBox.Location = new System.Drawing.Point(395, 148);
             this.WeightRenewalBox.Name = "WeightRenewalBox";
             this.WeightRenewalBox.Size = new System.Drawing.Size(69, 24);
             this.WeightRenewalBox.TabIndex = 27;
@@ -448,25 +458,25 @@ namespace GYM_Matrix
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Location = new System.Drawing.Point(202, 138);
-            this.PhoneBox.Multiline = true;
+            this.PhoneBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhoneBox.Location = new System.Drawing.Point(206, 175);
             this.PhoneBox.Name = "PhoneBox";
-            this.PhoneBox.Size = new System.Drawing.Size(110, 34);
+            this.PhoneBox.Size = new System.Drawing.Size(110, 25);
             this.PhoneBox.TabIndex = 26;
             // 
             // FatherBox
             // 
-            this.FatherBox.Location = new System.Drawing.Point(381, 57);
-            this.FatherBox.Multiline = true;
+            this.FatherBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FatherBox.Location = new System.Drawing.Point(385, 110);
             this.FatherBox.Name = "FatherBox";
-            this.FatherBox.Size = new System.Drawing.Size(110, 34);
+            this.FatherBox.Size = new System.Drawing.Size(110, 25);
             this.FatherBox.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(391, 30);
+            this.label2.Location = new System.Drawing.Point(395, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 23;
@@ -476,7 +486,7 @@ namespace GYM_Matrix
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(213, 30);
+            this.label1.Location = new System.Drawing.Point(217, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 24);
             this.label1.TabIndex = 21;
@@ -495,7 +505,7 @@ namespace GYM_Matrix
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Location = new System.Drawing.Point(38, 49);
+            this.panel1.Location = new System.Drawing.Point(37, 49);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 700);
             this.panel1.TabIndex = 26;
@@ -505,7 +515,7 @@ namespace GYM_Matrix
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(25, 228);
+            this.label17.Location = new System.Drawing.Point(25, 220);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(123, 34);
             this.label17.TabIndex = 70;
@@ -517,7 +527,7 @@ namespace GYM_Matrix
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(24, 280);
+            this.label18.Location = new System.Drawing.Point(25, 280);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(137, 34);
             this.label18.TabIndex = 63;
@@ -528,7 +538,7 @@ namespace GYM_Matrix
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(13, 159);
+            this.label3.Location = new System.Drawing.Point(15, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 24);
             this.label3.TabIndex = 52;
@@ -550,9 +560,9 @@ namespace GYM_Matrix
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1, 3);
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(213, 202);
+            this.pictureBox7.Size = new System.Drawing.Size(219, 200);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 8;
             this.pictureBox7.TabStop = false;
@@ -574,7 +584,7 @@ namespace GYM_Matrix
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(24, 580);
+            this.label26.Location = new System.Drawing.Point(25, 580);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(123, 34);
             this.label26.TabIndex = 67;
@@ -586,7 +596,7 @@ namespace GYM_Matrix
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(24, 640);
+            this.label23.Location = new System.Drawing.Point(25, 640);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(159, 34);
             this.label23.TabIndex = 69;
@@ -610,7 +620,7 @@ namespace GYM_Matrix
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(24, 520);
+            this.label21.Location = new System.Drawing.Point(25, 520);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(158, 34);
             this.label21.TabIndex = 66;
@@ -638,6 +648,71 @@ namespace GYM_Matrix
             this.CloseApp.TabIndex = 57;
             this.CloseApp.TabStop = false;
             this.CloseApp.Click += new System.EventHandler(this.CloseApp_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.SearchTextBox);
+            this.groupBox1.Controls.Add(this.IDRadio);
+            this.groupBox1.Controls.Add(this.NameRadio);
+            this.groupBox1.Controls.Add(this.ResetButton);
+            this.groupBox1.Location = new System.Drawing.Point(197, 17);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(486, 61);
+            this.groupBox1.TabIndex = 86;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Search Box";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GYM_Matrix.Properties.Resources.search_3_64__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(441, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 60;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.SearchButton);
+            // 
+            // SearchTextBox
+            // 
+            this.SearchTextBox.Location = new System.Drawing.Point(11, 22);
+            this.SearchTextBox.Name = "SearchTextBox";
+            this.SearchTextBox.Size = new System.Drawing.Size(110, 25);
+            this.SearchTextBox.TabIndex = 87;
+            // 
+            // IDRadio
+            // 
+            this.IDRadio.AutoSize = true;
+            this.IDRadio.Location = new System.Drawing.Point(256, 23);
+            this.IDRadio.Name = "IDRadio";
+            this.IDRadio.Size = new System.Drawing.Size(96, 22);
+            this.IDRadio.TabIndex = 86;
+            this.IDRadio.TabStop = true;
+            this.IDRadio.Text = "Search By ID";
+            this.IDRadio.UseVisualStyleBackColor = true;
+            // 
+            // NameRadio
+            // 
+            this.NameRadio.AutoSize = true;
+            this.NameRadio.Location = new System.Drawing.Point(134, 23);
+            this.NameRadio.Name = "NameRadio";
+            this.NameRadio.Size = new System.Drawing.Size(114, 22);
+            this.NameRadio.TabIndex = 86;
+            this.NameRadio.TabStop = true;
+            this.NameRadio.Text = "Search By Name";
+            this.NameRadio.UseVisualStyleBackColor = true;
+            // 
+            // ResetButton
+            // 
+            this.ResetButton.Image = global::GYM_Matrix.Properties.Resources.refresh;
+            this.ResetButton.Location = new System.Drawing.Point(370, 17);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(31, 33);
+            this.ResetButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ResetButton.TabIndex = 84;
+            this.ResetButton.TabStop = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetTableButton);
             // 
             // Renewal
             // 
@@ -667,6 +742,10 @@ namespace GYM_Matrix
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResetButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -722,5 +801,11 @@ namespace GYM_Matrix
         private System.Windows.Forms.PictureBox CloseApp;
         private System.Windows.Forms.PictureBox RefershButton;
         private System.Windows.Forms.Label AddPicture;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox SearchTextBox;
+        private System.Windows.Forms.RadioButton IDRadio;
+        private System.Windows.Forms.RadioButton NameRadio;
+        private System.Windows.Forms.PictureBox ResetButton;
     }
 }

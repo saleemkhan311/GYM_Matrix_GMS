@@ -76,10 +76,10 @@ namespace GYM_Matrix
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.CardProfile, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.CardID, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.CardName, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.CardMembershipType, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.CardProfile, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -100,7 +100,7 @@ namespace GYM_Matrix
             this.CardProfile.Location = new System.Drawing.Point(77, 10);
             this.CardProfile.Name = "CardProfile";
             this.CardProfile.Size = new System.Drawing.Size(200, 200);
-            this.CardProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CardProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CardProfile.TabIndex = 62;
             this.CardProfile.TabStop = false;
             // 
@@ -111,10 +111,10 @@ namespace GYM_Matrix
             this.CardID.BackColor = System.Drawing.Color.Transparent;
             this.CardID.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CardID.ForeColor = System.Drawing.Color.White;
-            this.CardID.Location = new System.Drawing.Point(158, 322);
+            this.CardID.Location = new System.Drawing.Point(157, 322);
             this.CardID.Name = "CardID";
             this.CardID.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CardID.Size = new System.Drawing.Size(38, 32);
+            this.CardID.Size = new System.Drawing.Size(40, 34);
             this.CardID.TabIndex = 63;
             this.CardID.Text = "ID:";
             this.CardID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,10 +126,10 @@ namespace GYM_Matrix
             this.CardName.BackColor = System.Drawing.Color.Transparent;
             this.CardName.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CardName.ForeColor = System.Drawing.Color.White;
-            this.CardName.Location = new System.Drawing.Point(109, 256);
+            this.CardName.Location = new System.Drawing.Point(105, 256);
             this.CardName.Name = "CardName";
             this.CardName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CardName.Size = new System.Drawing.Size(137, 31);
+            this.CardName.Size = new System.Drawing.Size(145, 31);
             this.CardName.TabIndex = 63;
             this.CardName.Text = "Saleem Khan";
             this.CardName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,10 +141,10 @@ namespace GYM_Matrix
             this.CardMembershipType.BackColor = System.Drawing.Color.Transparent;
             this.CardMembershipType.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CardMembershipType.ForeColor = System.Drawing.Color.White;
-            this.CardMembershipType.Location = new System.Drawing.Point(87, 288);
+            this.CardMembershipType.Location = new System.Drawing.Point(83, 287);
             this.CardMembershipType.Name = "CardMembershipType";
             this.CardMembershipType.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CardMembershipType.Size = new System.Drawing.Size(181, 32);
+            this.CardMembershipType.Size = new System.Drawing.Size(189, 34);
             this.CardMembershipType.TabIndex = 63;
             this.CardMembershipType.Text = "Membership Type";
             this.CardMembershipType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

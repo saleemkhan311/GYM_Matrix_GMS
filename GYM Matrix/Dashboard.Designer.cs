@@ -51,6 +51,7 @@ namespace GYM_Matrix
             this.label27 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.ViewFullData = new System.Windows.Forms.Button();
             this.RefreshButton = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.ExpiredMembersTable = new System.Windows.Forms.DataGridView();
@@ -115,7 +116,7 @@ namespace GYM_Matrix
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(17, 157);
+            this.label16.Location = new System.Drawing.Point(15, 150);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(192, 24);
@@ -126,10 +127,10 @@ namespace GYM_Matrix
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(216, 200);
+            this.pictureBox7.Size = new System.Drawing.Size(219, 200);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 8;
             this.pictureBox7.TabStop = false;
@@ -139,7 +140,7 @@ namespace GYM_Matrix
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.White;
             this.label17.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(0, 215);
+            this.label17.Location = new System.Drawing.Point(0, 220);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Padding = new System.Windows.Forms.Padding(48, 10, 65, 10);
@@ -166,7 +167,7 @@ namespace GYM_Matrix
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(26, 340);
+            this.label19.Location = new System.Drawing.Point(25, 340);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(165, 34);
@@ -179,7 +180,7 @@ namespace GYM_Matrix
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(26, 400);
+            this.label20.Location = new System.Drawing.Point(25, 400);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(113, 34);
@@ -218,7 +219,7 @@ namespace GYM_Matrix
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Bebas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(26, 460);
+            this.label22.Location = new System.Drawing.Point(25, 460);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(149, 34);
@@ -251,6 +252,7 @@ namespace GYM_Matrix
             this.Dashboard_Panel.Controls.Add(this.label27);
             this.Dashboard_Panel.Controls.Add(this.pictureBox2);
             this.Dashboard_Panel.Controls.Add(this.button1);
+            this.Dashboard_Panel.Controls.Add(this.ViewFullData);
             this.Dashboard_Panel.Controls.Add(this.RefreshButton);
             this.Dashboard_Panel.Controls.Add(this.label25);
             this.Dashboard_Panel.Controls.Add(this.ExpiredMembersTable);
@@ -280,7 +282,7 @@ namespace GYM_Matrix
             this.TotalMembersLabel.AutoSize = true;
             this.TotalMembersLabel.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TotalMembersLabel.ForeColor = System.Drawing.Color.Black;
-            this.TotalMembersLabel.Location = new System.Drawing.Point(103, 157);
+            this.TotalMembersLabel.Location = new System.Drawing.Point(49, 152);
             this.TotalMembersLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalMembersLabel.Name = "TotalMembersLabel";
             this.TotalMembersLabel.Size = new System.Drawing.Size(31, 24);
@@ -294,7 +296,7 @@ namespace GYM_Matrix
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Bebas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(70, 133);
+            this.label1.Location = new System.Drawing.Point(49, 129);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 20);
@@ -324,6 +326,7 @@ namespace GYM_Matrix
             this.MemberDuesTable.ReadOnly = true;
             this.MemberDuesTable.RowHeadersWidth = 51;
             this.MemberDuesTable.RowTemplate.Height = 29;
+            this.MemberDuesTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.MemberDuesTable.Size = new System.Drawing.Size(359, 156);
             this.MemberDuesTable.TabIndex = 18;
             // 
@@ -333,7 +336,7 @@ namespace GYM_Matrix
             this.StaffLabel.BackColor = System.Drawing.Color.White;
             this.StaffLabel.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.StaffLabel.ForeColor = System.Drawing.Color.Black;
-            this.StaffLabel.Location = new System.Drawing.Point(306, 156);
+            this.StaffLabel.Location = new System.Drawing.Point(250, 152);
             this.StaffLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StaffLabel.Name = "StaffLabel";
             this.StaffLabel.Size = new System.Drawing.Size(18, 24);
@@ -346,7 +349,7 @@ namespace GYM_Matrix
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Bebas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(275, 133);
+            this.label2.Location = new System.Drawing.Point(250, 129);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 20);
@@ -389,11 +392,24 @@ namespace GYM_Matrix
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.SendResminder);
             // 
+            // ViewFullData
+            // 
+            this.ViewFullData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(107)))), ((int)(((byte)(91)))));
+            this.ViewFullData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewFullData.Location = new System.Drawing.Point(546, 629);
+            this.ViewFullData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ViewFullData.Name = "ViewFullData";
+            this.ViewFullData.Size = new System.Drawing.Size(115, 32);
+            this.ViewFullData.TabIndex = 17;
+            this.ViewFullData.Text = "View Full Data";
+            this.ViewFullData.UseVisualStyleBackColor = false;
+            this.ViewFullData.Click += new System.EventHandler(this.ViewFullData_Click);
+            // 
             // RefreshButton
             // 
             this.RefreshButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(107)))), ((int)(((byte)(91)))));
             this.RefreshButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RefreshButton.Location = new System.Drawing.Point(687, 8);
+            this.RefreshButton.Location = new System.Drawing.Point(687, 629);
             this.RefreshButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(115, 32);
@@ -406,7 +422,7 @@ namespace GYM_Matrix
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(443, 244);
+            this.label25.Location = new System.Drawing.Point(443, 239);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(135, 24);
@@ -424,6 +440,7 @@ namespace GYM_Matrix
             this.ExpiredMembersTable.ReadOnly = true;
             this.ExpiredMembersTable.RowHeadersWidth = 51;
             this.ExpiredMembersTable.RowTemplate.Height = 29;
+            this.ExpiredMembersTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ExpiredMembersTable.Size = new System.Drawing.Size(359, 156);
             this.ExpiredMembersTable.TabIndex = 15;
             // 
@@ -431,7 +448,7 @@ namespace GYM_Matrix
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(443, 11);
+            this.label24.Location = new System.Drawing.Point(443, 16);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(206, 24);
@@ -459,7 +476,7 @@ namespace GYM_Matrix
             this.ExpenseLabel.BackColor = System.Drawing.Color.Transparent;
             this.ExpenseLabel.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ExpenseLabel.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseLabel.Location = new System.Drawing.Point(299, 582);
+            this.ExpenseLabel.Location = new System.Drawing.Point(250, 584);
             this.ExpenseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ExpenseLabel.Name = "ExpenseLabel";
             this.ExpenseLabel.Size = new System.Drawing.Size(31, 24);
@@ -473,7 +490,7 @@ namespace GYM_Matrix
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Bebas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(268, 558);
+            this.label12.Location = new System.Drawing.Point(250, 560);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 20);
@@ -486,7 +503,7 @@ namespace GYM_Matrix
             this.FeePaidLabel.BackColor = System.Drawing.Color.Transparent;
             this.FeePaidLabel.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FeePaidLabel.ForeColor = System.Drawing.Color.Black;
-            this.FeePaidLabel.Location = new System.Drawing.Point(299, 369);
+            this.FeePaidLabel.Location = new System.Drawing.Point(251, 369);
             this.FeePaidLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FeePaidLabel.Name = "FeePaidLabel";
             this.FeePaidLabel.Size = new System.Drawing.Size(31, 24);
@@ -500,7 +517,7 @@ namespace GYM_Matrix
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Bebas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(271, 346);
+            this.label10.Location = new System.Drawing.Point(250, 345);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 20);
@@ -538,7 +555,7 @@ namespace GYM_Matrix
             this.TotalFemaleMembersLabel.BackColor = System.Drawing.Color.Transparent;
             this.TotalFemaleMembersLabel.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TotalFemaleMembersLabel.ForeColor = System.Drawing.Color.Black;
-            this.TotalFemaleMembersLabel.Location = new System.Drawing.Point(103, 586);
+            this.TotalFemaleMembersLabel.Location = new System.Drawing.Point(54, 584);
             this.TotalFemaleMembersLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalFemaleMembersLabel.Name = "TotalFemaleMembersLabel";
             this.TotalFemaleMembersLabel.Size = new System.Drawing.Size(31, 24);
@@ -552,7 +569,7 @@ namespace GYM_Matrix
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Bebas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(48, 562);
+            this.label8.Location = new System.Drawing.Point(54, 560);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(147, 20);
@@ -565,7 +582,7 @@ namespace GYM_Matrix
             this.TotalMaleMembersLabel.BackColor = System.Drawing.Color.Transparent;
             this.TotalMaleMembersLabel.Font = new System.Drawing.Font("Bebas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TotalMaleMembersLabel.ForeColor = System.Drawing.Color.Black;
-            this.TotalMaleMembersLabel.Location = new System.Drawing.Point(100, 369);
+            this.TotalMaleMembersLabel.Location = new System.Drawing.Point(54, 369);
             this.TotalMaleMembersLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalMaleMembersLabel.Name = "TotalMaleMembersLabel";
             this.TotalMaleMembersLabel.Size = new System.Drawing.Size(31, 24);
@@ -591,7 +608,7 @@ namespace GYM_Matrix
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Bebas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(51, 345);
+            this.label6.Location = new System.Drawing.Point(53, 345);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(134, 20);
@@ -614,7 +631,7 @@ namespace GYM_Matrix
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(261, 14);
+            this.label13.Location = new System.Drawing.Point(255, 9);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 28);
@@ -626,7 +643,7 @@ namespace GYM_Matrix
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Berlin Bold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(392, 14);
+            this.label14.Location = new System.Drawing.Point(390, 11);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(15, 27);
@@ -638,7 +655,7 @@ namespace GYM_Matrix
             this.UserLabel.AutoSize = true;
             this.UserLabel.BackColor = System.Drawing.Color.Transparent;
             this.UserLabel.Font = new System.Drawing.Font("Bebas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserLabel.Location = new System.Drawing.Point(442, 14);
+            this.UserLabel.Location = new System.Drawing.Point(475, 9);
             this.UserLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserLabel.Name = "UserLabel";
             this.UserLabel.Size = new System.Drawing.Size(62, 28);
@@ -649,7 +666,7 @@ namespace GYM_Matrix
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::GYM_Matrix.Properties.Resources.settings;
-            this.pictureBox8.Location = new System.Drawing.Point(408, 9);
+            this.pictureBox8.Location = new System.Drawing.Point(423, 9);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(30, 34);
@@ -771,6 +788,7 @@ namespace GYM_Matrix
         private System.Windows.Forms.PictureBox MinimizeApp;
         private System.Windows.Forms.PictureBox CloseApp;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ViewFullData;
     }
 }
 

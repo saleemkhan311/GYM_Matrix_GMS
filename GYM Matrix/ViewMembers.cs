@@ -29,7 +29,7 @@ namespace GYM_Matrix
 
                 cmd = con.CreateCommand();
 
-                cmd.CommandText = "SELECT * FROM `addmembers`;";
+                cmd.CommandText = "SELECT * FROM `addmembers` ORDER BY Member_Name ASC;";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable Records = new DataTable();
@@ -284,6 +284,7 @@ namespace GYM_Matrix
             
         }
 
+     
         private void SearchButton(object sender, EventArgs e)
         {
             if (SearchTextBox.Text.Trim() != string.Empty)
@@ -298,7 +299,7 @@ namespace GYM_Matrix
 
                     if (NameRadio.Checked)
                     {
-                        cmd.CommandText = "SELECT * FROM addmembers WHERE Member_Name=@Member_Name";
+                        cmd.CommandText = "SELECT * FROM addmembers WHERE Member_Name LIKE"+ "'" + SearchTextBox.Text + "%'";
                         cmd.Parameters.AddWithValue("@Member_Name", SearchTextBox.Text);
 
                     }
@@ -309,14 +310,13 @@ namespace GYM_Matrix
                     }
                     else
                     {
-                        cmd.CommandText = "SELECT * FROM addmembers WHERE Member_Name=@Member_Name";
-                        cmd.Parameters.AddWithValue("@Member_Name", SearchTextBox.Text);
+                        MessageBox.Show("Please Select 'Search by Name' Or 'Search by ID' Option ");
                     }
 
                     MySqlDataReader reader = cmd.ExecuteReader();
                     DataTable records = new DataTable();
                     records.Load(reader);
-                    
+
 
                     if (records.Rows.Count >= 1)
                     {
@@ -336,6 +336,8 @@ namespace GYM_Matrix
             }
             else { MessageBox.Show("Enter Something to Search"); }
         }
+
+
 
         private void ResetuBtton(object sender, EventArgs e)
         {

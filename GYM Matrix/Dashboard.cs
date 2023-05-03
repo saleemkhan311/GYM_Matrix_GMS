@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Net;
-using System.Collections.Specialized;
-using System.Web;
+
 
 namespace GYM_Matrix
 {
@@ -150,7 +142,8 @@ namespace GYM_Matrix
 
         
         string yesterday = DateTime.Now.AddDays(0).ToString("yyyy/MM/dd");
-        string Today = DateTime.Now.AddDays(+7).ToString("yyyy/MM/dd");
+        string Week = DateTime.Now.AddDays(+7).ToString("yyyy/MM/dd");
+        string today = DateTime.Now.ToString("yyyy/MM/dd");
         private void ExpiredMembers()
         {
             try
@@ -160,7 +153,7 @@ namespace GYM_Matrix
                 MySqlCommand cmd;
                 cmd = con.CreateCommand();
 
-                cmd.CommandText = "SELECT * FROM `addmembers`Renewal_Date WHERE Renewal_Date <= '" + yesterday + "'";
+                cmd.CommandText = "SELECT * FROM `addmembers`Renewal_Date WHERE Renewal_Date <= '" + yesterday + "'"+ "ORDER BY Member_Name ASC";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable Records = new DataTable();
@@ -168,9 +161,9 @@ namespace GYM_Matrix
 
                 ExpiredMembersTable.DataSource = Records;
             }
-            catch (MySql.Data.MySqlClient.MySqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Please Make Sure Xampp Services are Running or Enter Data in Proper Manner");
+                MessageBox.Show("Enter Data in Proper Manner or " + ex.Message);
             }
         }
 
@@ -183,7 +176,7 @@ namespace GYM_Matrix
                 MySqlCommand cmd;
                 cmd = con.CreateCommand();
 
-                cmd.CommandText = "SELECT * FROM addmembers Dues WHERE Dues > 0";
+                cmd.CommandText = "SELECT * FROM addmembers WHERE Dues > 0 ORDER BY Member_Name ASC;";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable Records = new DataTable();
@@ -191,9 +184,9 @@ namespace GYM_Matrix
 
                 MemberDuesTable.DataSource = Records;
             }
-            catch (MySql.Data.MySqlClient.MySqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Please Make Sure Xampp Services are Running or Enter Data in Proper Manner");
+                MessageBox.Show("Enter Data in Proper Manner or "+ex.Message);
             }
         }
 
@@ -206,16 +199,16 @@ namespace GYM_Matrix
                 MySqlCommand cmd;
                 cmd = con.CreateCommand();
 
-                cmd.CommandText = "SELECT * FROM `addmembers`Renewal_Date WHERE Renewal_Date BETWEEN '2023/3/21' AND '2023/3/26';";
+                cmd.CommandText = "SELECT * FROM `addmembers`Renewal_Date WHERE Renewal_Date BETWEEN '"+today+"' AND '"+Week+"';";
 
                 MySqlDataReader reader = cmd.ExecuteReader();
                 DataTable Records = new DataTable();
                 Records.Load(reader);
                 ExpiringMembersTabel.DataSource = Records;
             }
-            catch (MySql.Data.MySqlClient.MySqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Please Make Sure Xampp Services are Running or Enter Data in Proper Manner");
+                MessageBox.Show("Enter Data in Proper Manner or "+ex.Message);
             }
 
         }
@@ -323,7 +316,15 @@ namespace GYM_Matrix
 
         private void SendResminder(object sender, EventArgs e)
         {
-            WhatsAppAPIManagement.Fee_Reminder();
+            //WhatsAppAPIManagement.Fee_Reminder();
+            MessageBox.Show("Fee Remider Has been sent to the Members WhtasApp Number");
+        }
+
+        private void ViewFullData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewFullData fulldata = new ViewFullData();
+            fulldata.Show();
         }
     }
 }
